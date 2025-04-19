@@ -3,6 +3,8 @@
 import { useState, FormEvent } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { signIn } from 'next-auth/react';
+
 
 // 定义接口
 interface LoginFormData {
@@ -51,6 +53,11 @@ export default function LoginForm({ submitError, setSubmitError }: LoginFormProp
       [id.replace('login-', '')]: type === 'checkbox' ? checked : value
     }));
   };
+
+
+  const handleGoogleSignIn = () => {
+    signIn('google', { callbackUrl: '/' });
+  };
   
   // 验证登录表单
   const validateLoginForm = (): boolean => {
@@ -80,32 +87,17 @@ export default function LoginForm({ submitError, setSubmitError }: LoginFormProp
     setSubmitError('');
     
     try {
-      // 调用登录API
-      const response = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: loginForm.email,
-          password: loginForm.password,
-          rememberMe: loginForm.rememberMe
-        }),
+      const result = await signIn('credentials', {
+        redirect: false,
+        email: loginForm.email,
+        password: loginForm.password,
+        callbackUrl: '/'
       });
-      
-      const data: AuthResponse = await response.json();
-      
-      if (data.success && data.token) {
-        // 保存token到localStorage或cookie
-        localStorage.setItem('token', data.token);
-        if (data.user) {
-          localStorage.setItem('user', JSON.stringify(data.user));
-        }
-        
-        // 重定向到首页
-        router.push('/');
-      } else {
-        setSubmitError(data.error || '登录失败，请检查您的凭据');
+  
+      if (result?.error) {
+        setSubmitError(result.error);
+      } else if (result?.ok) {
+        router.push(result.url || '/');
       }
     } catch (error) {
       console.error('登录出错:', error);
@@ -184,9 +176,9 @@ export default function LoginForm({ submitError, setSubmitError }: LoginFormProp
             </svg>
             Facebook
           </button>
-          <button className="social-btn google">
+          <button className="social-btn google" onClick={handleGoogleSignIn}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+            <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
             </svg>
             Google
           </button>

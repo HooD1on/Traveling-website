@@ -7,6 +7,7 @@ import PasswordForm from './PasswordForm'
 import PreferencesForm from './PreferencesForm'
 import '../style/profile.css'
 import Navbar from '../../components/Navbar'
+import { useSession } from 'next-auth/react'
 
 // 用户个人资料接口
 interface UserProfile {
@@ -29,6 +30,7 @@ interface UserProfile {
 
 export default function ProfilePage() {
   const router = useRouter();
+  const { data: session, status } = useSession();
   const [user, setUser] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'preferences'>('profile');
@@ -36,25 +38,20 @@ export default function ProfilePage() {
 
   // 获取用户资料数据
   useEffect(() => {
-
-  
-
-
     const fetchUserProfile = async () => {
       try {
         // 检查用户是否已登录
-        const token = localStorage.getItem('token');
-        if (!token) {
+        if (status === 'unauthenticated') {
           router.push('/auth');
           return;
         }
+        
+        if (status === 'loading') {
+          return; // 等待会话加载完成
+        }
 
         // 从API获取用户资料
-        const response = await fetch('/api/user/profile', {
-          headers: {
-            'Authorization': `Bearer ${token}`
-          }
-        });
+        const response = await fetch('/api/user/profile');
 
         if (!response.ok) {
           throw new Error('Failed to fetch user profile');
@@ -71,33 +68,24 @@ export default function ProfilePage() {
     };
 
     fetchUserProfile();
-  
-  }, [router]);
+  }, [router, status]);
 
   // 处理资料更新
   const handleProfileUpdate = async (updatedProfile: Partial<UserProfile>) => {
     try {
       setStatusMessage(null);
-      const token = localStorage.getItem('token');
       
-      console.log('发送更新请求:', updatedProfile);
-      
-      // 尝试使用fetch的完整选项
+      // 使用API路由
       const response = await fetch('/api/user/profile', {
         method: 'PATCH',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(updatedProfile),
-        // 添加这些选项可能有助于获取更多错误信息
-        credentials: 'include',
-        mode: 'cors'
+        body: JSON.stringify(updatedProfile)
       });
   
       // 获取完整的响应信息
       console.log('响应状态:', response.status);
-      console.log('响应头:', response.headers);
       
       const responseText = await response.text();
       console.log('响应体原始文本:', responseText);
@@ -128,13 +116,11 @@ export default function ProfilePage() {
   const handlePasswordChange = async (currentPassword: string, newPassword: string) => {
     try {
       setStatusMessage(null);
-      const token = localStorage.getItem('token');
       
       const response = await fetch('/api/user/change-password', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({ currentPassword, newPassword })
       });
@@ -155,13 +141,11 @@ export default function ProfilePage() {
   const handlePreferencesUpdate = async (preferences: UserProfile['preferences']) => {
     try {
       setStatusMessage(null);
-      const token = localStorage.getItem('token');
       
       const response = await fetch('/api/user/preferences', {
         method: 'PATCH',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({ preferences })
       });
@@ -179,12 +163,17 @@ export default function ProfilePage() {
     }
   };
 
-  if (loading) {
+  if (status === 'loading' || loading) {
     return (
       <div className="profile-container">
         <div className="profile-loading">Loading your profile...</div>
       </div>
     );
+  }
+
+  if (status === 'unauthenticated') {
+    router.push('/auth');
+    return null;
   }
 
   if (!user) {
@@ -221,7 +210,6 @@ export default function ProfilePage() {
           {statusMessage.text}
         </div>
       )}
-
 
       <div className="profile-tabs">
         <div 

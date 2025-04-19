@@ -1,6 +1,6 @@
 'use client'
-
 import { useState, useEffect } from 'react';
+import { useSession, signOut } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import '../app/style/Navbar.css';
@@ -14,49 +14,76 @@ interface User {
   firstName: string;
   lastName: string;
   email: string;
+  profileImage?: string;
 }
 
 export default function Navbar({ transparent }: NavbarProps = {}) {
   const router = useRouter();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [user, setUser] = useState<User | null>(null);
+  const { data: session } = useSession();
   const [showDropdown, setShowDropdown] = useState(false);
+  const [localUser, setLocalUser] = useState<User | null>(null);
 
-  // 在客户端渲染时检查用户是否已登录
   useEffect(() => {
     const token = localStorage.getItem('token');
-    const userData = localStorage.getItem('user');
-    
-    if (token && userData) {
-      setIsLoggedIn(true);
-      try {
-        setUser(JSON.parse(userData));
-      } catch (error) {
-        console.error('Error parsing user data:', error);
-      }
+    const userStr = localStorage.getItem('user');
+    if (token && userStr) {
+      setLocalUser(JSON.parse(userStr));
+    } else if (session?.user) {
+      syncGoogleUser();
     }
-  }, []);
+  }, [session]);
 
-  // 处理登出
-  const handleLogout = () => {
+  const syncGoogleUser = async () => {
+    if (!session?.user) return;
+    
+    try {
+      const response = await fetch('/api/auth/google', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: session.user.email,
+          firstName: session.user.name?.split(' ')[0] || '',
+          lastName: session.user.name?.split(' ')[1] || '',
+          avatar: session.user.image
+        })
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('user', JSON.stringify(data.user));
+        setLocalUser(data.user);
+      }
+    } catch (error) {
+      console.error('Error syncing Google user:', error);
+    }
+  };
+
+  const handleLogout = async () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
-    setIsLoggedIn(false);
-    setUser(null);
+    setLocalUser(null);
+    if (session) {
+      await signOut({ redirect: true, callbackUrl: '/' });
+    } else {
+      router.push('/');
+    }
     setShowDropdown(false);
-    router.push('/');
   };
 
-  // 切换下拉菜单
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
+  const currentUser = localUser || (session?.user ? {
+    id: '',
+    firstName: session.user.name?.split(' ')[0] || '',
+    lastName: session.user.name?.split(' ')[1] || '',
+    email: session.user.email || '',
+    profileImage: session.user.image
+  } : null);
 
   return (
     <nav className="navbar">
       <div className="logo">
         <Link href="/">
-          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgNDAiPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMjAgMTBjNS41IDAgMTAgNC41IDEwIDEwcy00LjUgMTAtMTAgMTBoLTVsNSA1di01YzUuNSAwIDEwLTQuNSAxMC0xMFMyNS41IDEwIDIwIDEweiIvPjx0ZXh0IHg9IjM1IiB5PSIyNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPlNLWTwvdGV4dD48L3N2Zz4=" alt="WandSky Logo" />
+          <img src="data:image/svg+xml;base64,..." alt="WandSky Logo" />
         </Link>
       </div>
       <ul className="nav-links">
@@ -67,13 +94,19 @@ export default function Navbar({ transparent }: NavbarProps = {}) {
         <li><Link href="/contact">Contact</Link></li>
       </ul>
       
-      {isLoggedIn && user ? (
+      {currentUser ? (
         <div className="user-menu">
-          <div className="user-profile" onClick={toggleDropdown}>
+          <div className="user-profile" onClick={() => setShowDropdown(!showDropdown)}>
             <div className="user-avatar">
-              {user.firstName?.charAt(0)}{user.lastName?.charAt(0)}
+              {currentUser.profileImage ? (
+                <img src={currentUser.profileImage} alt="avatar" />
+              ) : (
+                <span>
+                  {currentUser.firstName?.[0]}{currentUser.lastName?.[0]}
+                </span>
+              )}
             </div>
-            <span className="user-name">{user.firstName}</span>
+            <span className="user-name">{currentUser.firstName}</span>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               width="16" 

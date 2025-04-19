@@ -4,6 +4,7 @@ import { useState, useEffect, FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import '../style/auth.css'
+import { signIn } from 'next-auth/react'
 
 interface ResetPasswordFormProps {
   email: string;
@@ -100,7 +101,7 @@ export default function ResetPasswordForm({ email, token, submitError, setSubmit
     setSubmitError('');
     
     try {
-      const response = await fetch('/api/password/reset', {
+      const response = await fetch('/api/password/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

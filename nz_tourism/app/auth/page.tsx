@@ -9,6 +9,8 @@ import SignupForm from './SignupForm'
 import ForgotPasswordForm from './ForgotPasswordForm'
 import ResetPasswordForm from './ResetPasswordForm'
 import '../style/auth.css'
+import { signIn } from 'next-auth/react'
+
 
 export default function AuthPage() {
   const searchParams = useSearchParams();
