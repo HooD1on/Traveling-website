@@ -7,6 +7,7 @@ import '../app/style/Navbar.css';
 
 interface NavbarProps {
   transparent?: boolean;
+  className?: string;
 }
 
 interface User {
@@ -17,7 +18,7 @@ interface User {
   profileImage?: string;
 }
 
-export default function Navbar({ transparent }: NavbarProps = {}) {
+export default function Navbar({ transparent = false, className = '' }: NavbarProps) {
   const router = useRouter();
   const { data: session } = useSession();
   const [showDropdown, setShowDropdown] = useState(false);
@@ -80,7 +81,7 @@ export default function Navbar({ transparent }: NavbarProps = {}) {
   } : null);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${className || ''}`}>
       <div className="logo">
         <Link href="/">
           <img src="data:image/svg+xml;base64,..." alt="WandSky Logo" />

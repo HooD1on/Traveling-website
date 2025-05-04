@@ -76,7 +76,7 @@ export default function AuthPage() {
 
   return (
     <>
-      <Navbar />
+      <Navbar transparent={false} className="auth-navbar" />
       
       <div className="auth-container">
         <div className="auth-card">
