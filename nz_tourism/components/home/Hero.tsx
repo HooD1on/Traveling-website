@@ -1,48 +1,64 @@
 'use client'
 
-import { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero-content">
-        <h2 className="hero-subtitle">UNFORGETTABLE TRAVEL AWAITS THE</h2>
-        <h1 className="hero-title">ADVENTURE</h1>
-        <p className="hero-description">Experience the thrill of exploring the world's most fascinating destinations with our expertly curated travel packages.</p>
+      <div className="floating-icons">
+        <div className="icon-item icon-1">🏔️</div>
+        <div className="icon-item icon-2">🌊</div>
+        <div className="icon-item icon-3">🌋</div>
+        <div className="icon-item icon-4">🏄</div>
+        <div className="icon-item icon-5">🥝</div>
+        <div className="icon-item icon-6">🐑</div>
+        <div className="icon-item icon-7">⛵</div>
+        <div className="icon-item icon-8">🧗</div>
+      </div>
 
-        {/* 搜索表单 */}
-        <div className="search-form">
-          <div className="form-group">
-            <label className="form-label">Destination</label>
-            <select className="form-dropdown" defaultValue="Yogyakarta, Indonesia">
-              <option>Yogyakarta, Indonesia</option>
-              <option>Bali, Indonesia</option>
-              <option>Tokyo, Japan</option>
-              <option>Paris, France</option>
-            </select>
+      <div className="hero-content">
+        <h2 className="hero-subtitle">梦幻新西兰之旅</h2>
+        <h1 className="hero-title">非凡冒险</h1>
+        <p className="hero-description">
+          探索壮丽的自然风光，感受丰富的毛利文化，体验北岛和南岛令人难忘的精彩活动
+        </p>
+
+        <div className="experience-badges">
+          <div className="badge">
+            <span className="badge-number">200+</span>
+            <span className="badge-text">精选景点</span>
           </div>
-          <div className="form-group">
-            <label className="form-label">Date</label>
-            <select className="form-dropdown" defaultValue="March 29, 2023">
-              <option>March 29, 2023</option>
-              <option>April 5, 2023</option>
-              <option>April 12, 2023</option>
-              <option>April 19, 2023</option>
-            </select>
+          <div className="badge">
+            <span className="badge-number">50+</span>
+            <span className="badge-text">特色体验</span>
           </div>
-          <div className="form-group">
-            <label className="form-label">Price</label>
-            <select className="form-dropdown" defaultValue="$1,000 - $2,000">
-              <option>$1,000 - $2,000</option>
-              <option>$2,000 - $3,000</option>
-              <option>$3,000 - $4,000</option>
-              <option>$4,000+</option>
-            </select>
+          <div className="badge">
+            <span className="badge-number">24/7</span>
+            <span className="badge-text">专业服务</span>
           </div>
-          <button className="search-btn">Search</button>
+        </div>
+
+        <div className="featured-spot">
+          <div className="featured-pill">本月推荐</div>
+          <h3 className="featured-name">皇后镇探险</h3>
+          <div className="featured-rating">
+            <span className="star">★</span>
+            <span className="star">★</span>
+            <span className="star">★</span>
+            <span className="star">★</span>
+            <span className="star">★</span>
+            <span className="rating-number">4.9</span>
+          </div>
+        </div>
+
+        <div className="hero-buttons">
+          <Link href="/destinations" className="primary-btn">探索目的地</Link>
+          <Link href="/contact" className="secondary-btn">定制行程</Link>
         </div>
       </div>
     </section>
   )
-} 
+}
+
+export default Hero 

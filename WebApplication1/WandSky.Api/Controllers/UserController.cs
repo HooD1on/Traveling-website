@@ -128,5 +128,14 @@ namespace WandSky.API.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost("google")]
+        [AllowAnonymous]
+        public async Task<IActionResult> SyncGoogleUser([FromBody] GoogleUserDto user)
+        {
+            await _userService.SyncGoogleUserAsync(user);
+            return Ok(new { message = "Google user synced" });
+        }
+
     }
 }

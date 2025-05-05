@@ -135,16 +135,27 @@ html[data-homepage="true"] .navbar {
     position: absolute !important;
     background-color: transparent !important;
     box-shadow: none !important;
+    padding: 25px 50px !important;
 }
 
 html[data-homepage="true"] .navbar .nav-links a {
     color: white !important;
+    font-size: 15px !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
 html[data-homepage="true"] .navbar .sign-in-btn {
     background: transparent !important;
     color: white !important;
     border: 1px solid white !important;
+    padding: 8px 22px !important;
+    transition: all 0.3s ease !important;
+}
+
+html[data-homepage="true"] .navbar .sign-in-btn:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-2px) !important;
 }
 
 .logo {
@@ -232,76 +243,6 @@ html[data-homepage="true"] .navbar .sign-in-btn {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 40px;
-}
-
-/* 搜索表单 */
-.search-form {
-    display: flex;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    width: 80%;
-    max-width: 800px;
-}
-
-.form-group {
-    flex: 1;
-    padding: 15px 20px;
-    border-right: 1px solid #eee;
-    position: relative;
-}
-
-.form-group:last-of-type {
-    border-right: none;
-}
-
-.form-label {
-    display: block;
-    color: #333;
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-input {
-    width: 100%;
-    color: #555;
-    border: none;
-    font-size: 14px;
-    background: transparent;
-}
-
-.form-dropdown {
-    background: none;
-    border: none;
-    color: #555;
-    width: 100%;
-    font-size: 14px;
-    cursor: pointer;
-    appearance: none;
-}
-
-.search-btn {
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 0 30px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.search-btn:hover {
-    background: #2980b9;
-}
-
-.dropdown-icon {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    color: #999;
 }
 
 /* 合作伙伴部分 */
@@ -996,16 +937,6 @@ html[data-homepage="true"] .navbar .sign-in-btn {
 
     .hero-title {
         font-size: 60px;
-    }
-
-    .search-form {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .form-group {
-        border-right: none;
-        border-bottom: 1px solid #eee;
     }
 
     .partners {

@@ -31,7 +31,6 @@ namespace WandSky.Services
                 throw new ArgumentException("User not found");
             }
 
-            // 检查电子邮件是否已存在且不是当前用户的
             if (!string.IsNullOrEmpty(updateProfileDto.Email) &&
                 !string.Equals(user.Email, updateProfileDto.Email, StringComparison.OrdinalIgnoreCase))
             {
@@ -42,7 +41,14 @@ namespace WandSky.Services
                 }
             }
 
-            // 其余代码保持不变
+            UpdateUserProperties(user, updateProfileDto);
+            await _userRepository.UpdateAsync(user);
+
+            return _mapper.Map<UserProfileDto>(user);
+        }
+
+        private void UpdateUserProperties(User user, UpdateProfileDto updateProfileDto)
+        {
             if (!string.IsNullOrEmpty(updateProfileDto.FirstName))
                 user.FirstName = updateProfileDto.FirstName;
 
@@ -69,10 +75,6 @@ namespace WandSky.Services
 
             if (updateProfileDto.ProfileImage != null)
                 user.ProfileImage = updateProfileDto.ProfileImage;
-
-            await _userRepository.UpdateAsync(user);
-
-            return _mapper.Map<UserProfileDto>(user);
         }
 
         public async Task<ServiceResponse<bool>> ChangePasswordAsync(Guid userId, string currentPassword, string newPassword)
@@ -87,7 +89,6 @@ namespace WandSky.Services
                 };
             }
 
-            // 验证当前密码
             if (!BCrypt.Net.BCrypt.Verify(currentPassword, user.PasswordHash))
             {
                 return new ServiceResponse<bool>
@@ -97,7 +98,6 @@ namespace WandSky.Services
                 };
             }
 
-            // 创建新密码哈希
             string passwordSalt = BCrypt.Net.BCrypt.GenerateSalt();
             string passwordHash = BCrypt.Net.BCrypt.HashPassword(newPassword, passwordSalt);
 
@@ -121,7 +121,6 @@ namespace WandSky.Services
                 throw new ArgumentException("User not found");
             }
 
-            // 如果用户没有偏好设置，创建一个新的
             if (user.Preferences == null)
             {
                 user.Preferences = new UserPreferences
@@ -137,9 +136,7 @@ namespace WandSky.Services
                 user.Preferences.Newsletter = preferencesDto.Newsletter;
             }
 
-            // 更新旅行偏好
             await _userRepository.UpdateUserPreferencesAsync(userId, preferencesDto.TravelPreferences);
-
             await _userRepository.UpdateAsync(user);
 
             return new UserPreferencesDto
@@ -149,12 +146,13 @@ namespace WandSky.Services
                 TravelPreferences = preferencesDto.TravelPreferences
             };
         }
+
         public async Task<ServiceResponse<bool>> RequestPasswordResetAsync(string email)
         {
             var user = await _userRepository.GetByEmailAsync(email);
             if (user == null)
             {
-                return new ServiceResponse<bool> { Success = true }; // 安全考虑，不暴露用户是否存在
+                return new ServiceResponse<bool> { Success = true };
             }
 
             string resetToken = Convert.ToBase64String(Guid.NewGuid().ToByteArray());
@@ -162,10 +160,52 @@ namespace WandSky.Services
 
             await _userRepository.UpdatePasswordResetTokenAsync(user.Id, resetToken, tokenExpires);
 
-            // TODO: 这里应该发送重置密码邮件给用户
-            // 后续可以添加邮件服务来发送重置链接
-
             return new ServiceResponse<bool> { Success = true };
+        }
+
+        public async Task<ServiceResponse<UserDto>> SyncGoogleUserAsync(GoogleUserDto dto)
+        {
+            try
+            {
+                var existingUser = await _userRepository.GetByEmailAsync(dto.Email);
+                if (existingUser == null)
+                {
+                    var newUser = new User
+                    {
+                        Id = Guid.NewGuid(),
+                        Email = dto.Email ?? string.Empty,
+                        FirstName = dto.FirstName ?? string.Empty,
+                        LastName = dto.LastName ?? string.Empty,
+                        ProfileImage = dto.Avatar ?? string.Empty,
+                        IsGoogleAccount = true,
+                        Address = string.Empty,
+                        City = string.Empty,
+                        Country = string.Empty,
+                        Phone = string.Empty,
+                        Bio = string.Empty
+                    };
+                    await _userRepository.CreateAsync(newUser);
+                    return new ServiceResponse<UserDto>
+                    {
+                        Success = true,
+                        Data = _mapper.Map<UserDto>(newUser)
+                    };
+                }
+
+                return new ServiceResponse<UserDto>
+                {
+                    Success = true,
+                    Data = _mapper.Map<UserDto>(existingUser)
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<UserDto>
+                {
+                    Success = false,
+                    Error = ex.Message
+                };
+            }
         }
 
         public async Task<ServiceResponse<bool>> ResetPasswordWithTokenAsync(string token, string newPassword)
@@ -180,7 +220,6 @@ namespace WandSky.Services
                 };
             }
 
-            // 创建新密码哈希
             string passwordSalt = BCrypt.Net.BCrypt.GenerateSalt();
             string passwordHash = BCrypt.Net.BCrypt.HashPassword(newPassword, passwordSalt);
 
@@ -195,4 +234,3 @@ namespace WandSky.Services
         }
     }
 }
-

@@ -47,3 +47,4 @@ D:\旅游软件\WebApplication1\WandSky.Core\obj\Debug\net8.0\WandSky.Core.genru
 D:\旅游软件\WebApplication1\WandSky.Core\obj\Debug\net8.0\ref\WandSky.Core.dll
 D:\旅游软件\WebApplication1\WandSky.Core\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\旅游软件\WebApplication1\WandSky.Core\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\旅游软件\WebApplication1\WandSky.Core\bin\Debug\net8.0\libman.json

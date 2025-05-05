@@ -204,3 +204,5 @@ D:\旅游软件\WebApplication1\WandSky.Api\obj\Debug\net8.0\refint\WandSky.Api.
 D:\旅游软件\WebApplication1\WandSky.Api\obj\Debug\net8.0\WandSky.Api.pdb
 D:\旅游软件\WebApplication1\WandSky.Api\obj\Debug\net8.0\WandSky.Api.genruntimeconfig.cache
 D:\旅游软件\WebApplication1\WandSky.Api\obj\Debug\net8.0\ref\WandSky.Api.dll
+D:\旅游软件\WebApplication1\WandSky.Api\bin\Debug\net8.0\libman.json
+D:\旅游软件\WebApplication1\WandSky.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll

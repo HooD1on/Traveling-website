@@ -14,6 +14,29 @@ using WandSky.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
+// 添加 CORS 配置
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")  // 前端地址
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials();
+    });
+});
+
+// 添加 Google 认证
+builder.Services.AddAuthentication()
+    .AddGoogle(googleOptions =>
+    {
+        googleOptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+        googleOptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+        googleOptions.CallbackPath = "/api/auth/callback/google";
+    });
+
 // 添加数据库
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -119,6 +142,14 @@ if (app.Environment.IsDevelopment())
         }
     }
 }
+
+
+
+
+// 在 UseAuthentication 之前使用 CORS
+app.UseCors("CorsPolicy");
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");

@@ -182,3 +182,4 @@ D:\旅游软件\WebApplication1\WandSky.Infrastructure\obj\Debug\net8.0\ref\Wand
 D:\旅游软件\WebApplication1\WandSky.Infrastructure\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\旅游软件\WebApplication1\WandSky.Infrastructure\obj\Debug\net8.0\WandSky.Infrastructure.MvcApplicationPartsAssemblyInfo.cs
 D:\旅游软件\WebApplication1\WandSky.Infrastructure\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\旅游软件\WebApplication1\WandSky.Infrastructure\bin\Debug\net8.0\libman.json

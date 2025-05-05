@@ -109,3 +109,4 @@ D:\旅游软件\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Servic
 D:\旅游软件\WebApplication1\WandSky.Services\obj\Debug\net8.0\ref\WandSky.Services.dll
 D:\旅游软件\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\旅游软件\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.MvcApplicationPartsAssemblyInfo.cs
+D:\旅游软件\WebApplication1\WandSky.Services\bin\Debug\net8.0\libman.json

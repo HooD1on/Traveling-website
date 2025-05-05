@@ -41,4 +41,41 @@ public class AuthController : ControllerBase
 
         return Ok(response);
     }
+
+    [HttpPost("google")]
+    public async Task<ActionResult<AuthResponseDto>> GoogleSignInAsync([FromBody] GoogleSignInDto request)
+    {
+        try
+        {
+            if (request == null)
+            {
+                Console.WriteLine("Google signin request is null");
+                return BadRequest("Request cannot be null");
+            }
+
+            // 记录详细请求
+            Console.WriteLine($"Google signin request: Email={request.Email}, FirstName={request.FirstName}, LastName={request.LastName}");
+
+            var response = await _authService.GoogleSignInAsync(request);
+
+            if (!response.Success)
+            {
+                Console.WriteLine($"Google signin failed: {response.Error}");
+                return BadRequest(response);
+            }
+
+            Console.WriteLine($"Google signin successful for: {request.Email}");
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception in GoogleSignInAsync: {ex.Message}");
+            Console.WriteLine(ex.StackTrace);
+            return StatusCode(500, new AuthResponseDto
+            {
+                Success = false,
+                Error = $"Internal server error: {ex.Message}"
+            });
+        }
+    }
 }

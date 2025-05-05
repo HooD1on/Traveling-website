@@ -1,32 +1,46 @@
-export default function QualityStats() {
+import React from 'react';
+
+const stats = [
+  {
+    number: '10,000+',
+    label: 'Happy Travelers'
+  },
+  {
+    number: '500+',
+    label: 'Destinations'
+  },
+  {
+    number: '98%',
+    label: 'Satisfaction Rate'
+  },
+  {
+    number: '24/7',
+    label: 'Customer Support'
+  }
+];
+
+const QualityStats = () => {
   return (
-    <div className="quality">
-      <div className="quality-header">
-        <h3 className="quality-title">ONLY THE BEST QUALITY FOR YOU</h3>
-        <p className="quality-desc">Experience the difference with our premium services and our sophisticated activities.</p>
-      </div>
-      
-      <div className="quality-stats">
-        <div className="stat-item">
-          <div className="stat-number">20+</div>
-          <div className="stat-label">Premium Destinations</div>
+    <section className="quality">
+      <div className="container">
+        <div className="quality-header">
+          <h2 className="quality-title">Our Quality Standards</h2>
+          <p className="quality-desc">
+            We are committed to providing the highest quality travel experiences
+            for our customers, backed by years of expertise and dedication.
+          </p>
         </div>
-        
-        <div className="stat-item">
-          <div className="stat-number">100+</div>
-          <div className="stat-label">Handpicked Activities</div>
-        </div>
-        
-        <div className="stat-item">
-          <div className="stat-number">10+</div>
-          <div className="stat-label">Years of Travel Service</div>
-        </div>
-        
-        <div className="stat-item">
-          <div className="stat-number">2,357,945</div>
-          <div className="stat-label">Happy Travelers</div>
+        <div className="quality-stats">
+          {stats.map((stat, index) => (
+            <div key={index} className="stat-item">
+              <div className="stat-number">{stat.number}</div>
+              <div className="stat-label">{stat.label}</div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
-  )
-} 
+    </section>
+  );
+};
+
+export default QualityStats; 

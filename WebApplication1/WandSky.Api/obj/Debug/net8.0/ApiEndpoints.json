@@ -1,6 +1,32 @@
 [
   {
     "ContainingType": "WandSky.API.Controllers.AuthController",
+    "Method": "GoogleSignInAsync",
+    "RelativePath": "api/auth/google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WandSky.Core.DTOs.Auth.GoogleSignInDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WandSky.Core.DTOs.Auth.AuthResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WandSky.API.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
@@ -62,6 +88,22 @@
       {
         "Name": "passwordDto",
         "Type": "ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WandSky.API.Controllers.UserController",
+    "Method": "SyncGoogleUser",
+    "RelativePath": "api/user/google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "WandSky.Core.DTOs.GoogleUserDto",
         "IsRequired": true
       }
     ],

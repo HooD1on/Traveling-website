@@ -31,6 +31,9 @@ namespace WandSky.Infrastructure.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Avatar")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Bio")
                         .HasColumnType("nvarchar(max)");
 
@@ -40,7 +43,7 @@ namespace WandSky.Infrastructure.Migrations
                     b.Property<string>("Country")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<DateTime?>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -53,10 +56,24 @@ namespace WandSky.Infrastructure.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<bool>("IsGoogleAccount")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastLoginFailedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime?>("LockoutEndAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("LoginFailedCount")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
@@ -157,8 +174,7 @@ namespace WandSky.Infrastructure.Migrations
 
             modelBuilder.Entity("WandSky.Core.Entities.User", b =>
                 {
-                    b.Navigation("Preferences")
-                        .IsRequired();
+                    b.Navigation("Preferences");
 
                     b.Navigation("TravelPreferences");
                 });

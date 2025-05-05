@@ -74,5 +74,28 @@ namespace WandSky.Infrastructure.Repositories
                 await UpdateAsync(user);
             }
         }
+
+
+        public async Task UpdateLoginFailedAsync(User user)
+        {
+            _context.Entry(user).Property(x => x.LoginFailedCount).IsModified = true;
+            _context.Entry(user).Property(x => x.LastLoginFailedAt).IsModified = true;
+            _context.Entry(user).Property(x => x.LockoutEndAt).IsModified = true;
+            await _context.SaveChangesAsync();
+        }
+
+
+
+        public async Task<User?> FindByEmailAsync(string email)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        }
+
+        public async Task CreateAsync(User user)
+        {
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

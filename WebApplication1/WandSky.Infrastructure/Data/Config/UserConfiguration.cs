@@ -56,6 +56,15 @@ namespace WandSky.Infrastructure.Data.Config
 
             builder.Property(u => u.PasswordResetTokenExpires)
                 .IsRequired(false);
+
+            builder.Property(u => u.LoginFailedCount)
+                .HasDefaultValue(0);
+
+            builder.Property(u => u.LastLoginFailedAt)
+                .IsRequired(false);
+
+            builder.Property(u => u.LockoutEndAt)
+                .IsRequired(false);
         }
     }
 }

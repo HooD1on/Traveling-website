@@ -1,6 +1,12 @@
 'use client'
 
 import './globals.css'
+import '../styles/layout.css'
+import '../styles/components.css'
+import '../styles/sections.css'
+import '../styles/destination.css'
+import '../styles/home.css'
+
 import { SessionProvider } from "next-auth/react"
 import NavigationHandler from '../components/NavigationHandler'
 import Navbar from '../components/Navbar'
@@ -31,9 +37,9 @@ export default function RootLayout({
           {/* 导航处理组件 - 不渲染UI，只处理导航状态 */}
           <NavigationHandler />
           
-          <div className="flex flex-col min-h-screen">
+          <div className="layout-wrapper">
             <Navbar />
-            <main className="flex-grow">
+            <main className="main-content">
               {children}
             </main>
             <Footer />
