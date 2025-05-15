@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WandSky.Api",
+    "\\WandSky.Services"
   ],
   "PreviewInSolutionExplorer": false
 }

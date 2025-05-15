@@ -149,7 +149,6 @@ namespace WandSky.Services.Auth
             await _userRepository.UpdateLoginFailedAsync(user);
 
             var token = _tokenService.CreateToken(user);
-
             return new AuthResponseDto
             {
                 Success = true,

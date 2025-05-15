@@ -1,4 +1,4 @@
-@WandSky.Api_HostAddress = http://localhost:5167
+@WandSky.Api_HostAddress = http://localhost:5152
 
 GET {{WandSky.Api_HostAddress}}/weatherforecast/
 Accept: application/json

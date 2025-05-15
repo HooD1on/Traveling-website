@@ -110,3 +110,226 @@ D:\旅游软件\WebApplication1\WandSky.Services\obj\Debug\net8.0\ref\WandSky.Se
 D:\旅游软件\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\旅游软件\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.MvcApplicationPartsAssemblyInfo.cs
 D:\旅游软件\WebApplication1\WandSky.Services\bin\Debug\net8.0\libman.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.deps.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.runtimeconfig.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\libman.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.staticwebassets.endpoints.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.exe
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.deps.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.runtimeconfig.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.staticwebassets.endpoints.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.exe
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\appsettings.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.staticwebassets.endpoints.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.exe
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.deps.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.runtimeconfig.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.pdb
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.pdb
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.pdb
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.csproj.AssemblyReference.cache
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.AssemblyInfoInputs.cache
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.AssemblyInfo.cs
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.csproj.CoreCompileInputs.cache
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\scopedcss\bundle\WandSky.Services.styles.css
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.WandSky.Services.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.WandSky.Services.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.build.WandSky.Services.props
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WandSky.Services.props
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WandSky.Services.props
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky..9BFC602A.Up2Date
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\refint\WandSky.Services.dll
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.pdb
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.genruntimeconfig.cache
+C:\Users\whhd1\Downloads\Traveling-website-main (1)\Traveling-website-main\WebApplication1\WandSky.Services\obj\Debug\net8.0\ref\WandSky.Services.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\libman.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.staticwebassets.endpoints.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.staticwebassets.endpoints.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\appsettings.Development.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\appsettings.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.staticwebassets.endpoints.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.deps.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.runtimeconfig.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.exe
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.deps.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.runtimeconfig.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.exe
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.exe
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.deps.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.runtimeconfig.json
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Services.pdb
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\AutoMapper.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Azure.Core.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Azure.Identity.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.ClientModel.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Text.Json.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Core.pdb
+D:\Traveling-website\WebApplication1\WandSky.Services\bin\Debug\net8.0\WandSky.Infrastructure.pdb
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.csproj.AssemblyReference.cache
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.AssemblyInfoInputs.cache
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.AssemblyInfo.cs
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.csproj.CoreCompileInputs.cache
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.MvcApplicationPartsAssemblyInfo.cs
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.MvcApplicationPartsAssemblyInfo.cache
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.sourcelink.json
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\scopedcss\bundle\WandSky.Services.styles.css
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.build.json
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.development.json
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.WandSky.Services.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.WandSky.Services.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.build.WandSky.Services.props
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WandSky.Services.props
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WandSky.Services.props
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky..9BFC602A.Up2Date
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\refint\WandSky.Services.dll
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.pdb
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\WandSky.Services.genruntimeconfig.cache
+D:\Traveling-website\WebApplication1\WandSky.Services\obj\Debug\net8.0\ref\WandSky.Services.dll

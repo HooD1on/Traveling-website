@@ -12,9 +12,23 @@ using WandSky.Services;
 using AutoMapper;
 using WandSky.Core;
 
-var builder = WebApplication.CreateBuilder(args);
+// 禁用默认端口配置
+Environment.SetEnvironmentVariable("ASPNETCORE_URLS", "http://localhost:5152");
 
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+{
+    Args = args,
+    WebRootPath = "wwwroot",
+    ContentRootPath = Directory.GetCurrentDirectory(),
+    ApplicationName = typeof(Program).Assembly.FullName
+});
 
+// 强制使用特定端口
+builder.WebHost.UseUrls("http://localhost:5152");
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5152); // 指定Kestrel直接监听5152端口
+});
 
 // 添加 CORS 配置
 builder.Services.AddCors(options =>
@@ -143,9 +157,6 @@ if (app.Environment.IsDevelopment())
     }
 }
 
-
-
-
 // 在 UseAuthentication 之前使用 CORS
 app.UseCors("CorsPolicy");
 app.UseAuthentication();
@@ -158,5 +169,24 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// 添加自动打开浏览器的代码
+if (app.Environment.IsDevelopment())
+{
+    try
+    {
+        var url = "http://localhost:5152/swagger";
+        var processStartInfo = new System.Diagnostics.ProcessStartInfo
+        {
+            FileName = url,
+            UseShellExecute = true
+        };
+        System.Diagnostics.Process.Start(processStartInfo);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"无法自动打开浏览器: {ex.Message}");
+    }
+}
 
 app.Run();

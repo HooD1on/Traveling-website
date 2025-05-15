@@ -1,46 +1,54 @@
 {
   "Version": 1,
-  "Hash": "KJiz3ayldMcLKWaGd1v6kdlK6P9Flxzi/zXQGCMN3EE=",
+  "Hash": "0FL6NXxy498WiGpFTsH/yuOJHSli5yLzq4NjsqtTK0c=",
   "Source": "WandSky.Api",
   "BasePath": "_content/WandSky.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "D:\\旅游软件\\WebApplication1\\WandSky.Core\\WandSky.Core.csproj",
+      "Identity": "D:\\Traveling-website\\WebApplication1\\WandSky.Core\\WandSky.Core.csproj",
       "Version": 2,
       "Source": "WandSky.Core",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "D:\\旅游软件\\WebApplication1\\WandSky.Infrastructure\\WandSky.Infrastructure.csproj",
+      "Identity": "D:\\Traveling-website\\WebApplication1\\WandSky.Infrastructure\\WandSky.Infrastructure.csproj",
       "Version": 2,
       "Source": "WandSky.Infrastructure",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "D:\\旅游软件\\WebApplication1\\WandSky.Services\\WandSky.Services.csproj",
+      "Identity": "D:\\Traveling-website\\WebApplication1\\WandSky.Services\\WandSky.Services.csproj",
       "Version": 2,
       "Source": "WandSky.Services",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WandSky.Api\\wwwroot",
+      "Source": "WandSky.Api",
+      "ContentRoot": "D:\\Traveling-website\\WebApplication1\\WandSky.Api\\wwwroot\\",
+      "BasePath": "_content/WandSky.Api",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }
