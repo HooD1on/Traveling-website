@@ -1,19 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: 'http://localhost:5152/api/:path*',
-        has: [
-          {
-            type: 'prefix',
-            value: '/api',
-            not: ['/api/auth']  // 排除 NextAuth 路由
-          }
-        ]
-      }
-    ]
+  images: {
+    domains: ['images.unsplash.com'],
   }
+  // 暂时移除rewrites配置，让默认路由处理机制生效
 }
+
+module.exports = nextConfig
